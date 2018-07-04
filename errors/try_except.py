@@ -1,7 +1,8 @@
 try:
     foobar
 except:
-    print("You silly goosey... foobar isn't defined! but thats ok, I'll keep going...")
+    print("You silly goosey...\
+          foobar isn't defined! but thats ok, I'll keep going...")
 print("after try")
 
 # --------------------------------
@@ -21,11 +22,12 @@ def get(d, key):
         return None
 
 
+'''
 d = {"name": "Ricky", "last_name": "Bobby"}
 print(get(d, "city"))
 print(get(d, "name"))
 print(get(d, "last_name"))
-
+'''
 # --------------------------------
 
 try:
@@ -64,4 +66,20 @@ def divide(a, b):
         print(f"{a} divided by {b} is {result}")
 
 
-divide(1,'2')
+# divide(1, '2')
+
+# ---------------------------------
+
+
+def divide2(num1, num2):
+    try:
+        result = num1/num2
+    except TypeError:
+        return "Please provide two integers or floats"
+    except ZeroDivisionError:
+        return "Please do not divide by zero"
+    else:
+        return result
+
+
+divide2([], 4)
