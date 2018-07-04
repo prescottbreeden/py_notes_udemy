@@ -7,6 +7,20 @@ users = [
     {"username": "guitar_gal", "tweets": []}
 ]
 
-# print(sorted(users, key=len))
-# print(sorted(users, key=lambda user: user['username']))
-print(sorted(users, key=lambda user: len(user['tweets'])))
+result = sorted(users, key=len)
+result = sorted(users, key=lambda user: user['username'])
+result = sorted(users, key=lambda user: len(user['tweets']))
+result = sorted(users, key=lambda user: len(user['tweets']), reverse=True)
+
+print(result)
+
+songs = [
+    {"title": "happy birthday", "playcount": 1},
+    {"title": "Survive", "playcount": 6},
+    {"title": "YMCA", "playcount": 99},
+    {"title": "Toxic", "playcount": 31},
+]
+
+most_played = sorted(songs, key=lambda s: s['playcount'], reverse=True)
+
+print(most_played)
