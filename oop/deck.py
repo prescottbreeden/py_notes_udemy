@@ -1,4 +1,3 @@
-from game import Game
 from card import Card
 import random
 
@@ -7,7 +6,7 @@ class Deck(object):
     def __init__(self):
         self._cards = []
         self._SIZE_OF_DECK = 52
-        self._count = len(self._cards)
+        # self._count = len(self._cards)
 
     def deal(self, Player):
         dealt = self._cards.pop()
@@ -31,19 +30,9 @@ class Deck(object):
         return self
 
     def print_self(self):
-        for c in deck._cards:
+        for c in self._cards:
             c.read_card()
         return self
 
-
-game1 = Game()
-game1.create_players('Ricky', 'Bobby', 'Texas', 'Ranger')
-deck = Deck()
-deck.build().print_self().shuffle().print_self()
-
-print(deck._count)
-
-for p in Game.players:
-    deck.deal(p)
-
-print(deck._count)
+    def num_cards(self):
+        return len(self._cards)
