@@ -8,6 +8,14 @@ class Deck(object):
         self._SIZE_OF_DECK = 52
         # self._count = len(self._cards)
 
+    def __repr__(self):
+        return f"Deck of {self.num_cards()} cards."
+
+    def __iter__(self):
+        # return iter(self._cards)
+        for card in self._cards:
+            yield card
+
     def deal(self, Player):
         dealt = self._cards.pop()
         Player._hand.append(dealt)
@@ -36,3 +44,11 @@ class Deck(object):
 
     def num_cards(self):
         return len(self._cards)
+
+
+d = Deck()
+print(d)
+d.build()
+print(d)
+for card in d:
+    print(card)
