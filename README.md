@@ -1,4 +1,5 @@
 # py_notes
+(pep8 formatted)
 
 ## built-in methods
 - all, any
