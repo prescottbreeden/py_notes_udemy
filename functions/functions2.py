@@ -1,42 +1,34 @@
-'''
-*args
-
-gathers remaining arguments as a tuple
-
-it is jut a parameter, you can call it whatever you want
-'''
-
-
 def sum_all_nums(*args):
-    total = 0
-    for num in args:
-        total += num
-    return total
+    '''
+    Accepts any number of integers and sums them
 
+    >>> sum_all_nums(4, 6, 9, 4, 10)
+    33
+    '''
+    return sum(arg for arg in args)
 
-print(sum_all_nums(4, 6, 9, 4, 10))
+# print(sum_all_nums(4, 6, 9, 4, 10))
 
 
 def star(*args):
     print(args)
 
 
-test = "Hello World"
-test2 = test.split(' ')
-star(test)
-
-'''
-**kwargs
-
-gathers remaining keyword arguments as a dictionary
-
-'''
+# test = "Hello World"
+# test2 = test.split(' ')
+# star(test)
 
 
 def fav_colors(**kwargs):
-    print(kwargs)
+    '''
+    Accepts any number of keyword arguments and returns a string
+    with the key and the value printed as:
+        "{kwarg}'s favorite color is {color}'"
+
+    >>> fav_colors(colt="purple", ruby="red", ethel="teal")
+    colt's favorite color is purple
+    ruby's favorite color is red
+    ethel's favorite color is teal
+    '''
     for person, color in kwargs.items():
         print(f'{person}\'s favorite color is {color}')
-
-
-fav_colors(colt="purple", ruby="red", ethel="teal")
