@@ -1,3 +1,4 @@
+# !python3 -m doctest -v functions2.py
 def sum_all_nums(*args):
     '''
     Accepts any number of integers and sums them

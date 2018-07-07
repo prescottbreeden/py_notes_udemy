@@ -1,3 +1,4 @@
+# !python3 -m doctest -v functions.py
 def compact(ar):
     '''
     Accepts a list and returns a new list of values that are truthy values,
