@@ -1,6 +1,12 @@
 # py_notes
 (pep8 formatted)
 
+## bots
+- scrapy
+- beautiful soup
+- trivia game
+- book data crawler
+
 ## built-in methods
 - all, any
 - filter, map
