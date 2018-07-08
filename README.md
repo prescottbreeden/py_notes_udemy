@@ -21,6 +21,10 @@
 - raising errors
 - try except
 
+## file i/o
+- reading
+- writing
+
 ## http
 - requests
 - headers
@@ -34,6 +38,11 @@
 - class methods
 - inheritance/polymorhpism
 - special methods
+
+## regex
+- search
+- findall
+- group names
 
 ## testing
 - assertions
