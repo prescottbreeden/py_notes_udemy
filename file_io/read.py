@@ -21,3 +21,7 @@ print(file.readlines())
 
 file.close()
 print(file.closed)
+
+with open('story.txt') as f:
+    data = f.read()
+    print(data)
