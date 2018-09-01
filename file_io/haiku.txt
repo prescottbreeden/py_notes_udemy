@@ -1,0 +1,7 @@
+Writing files is great
+Here's another line of text
+Closing now, goodbye!
+
+Writing files is great
+Here's another line of text
+Closing now, goodbye!
