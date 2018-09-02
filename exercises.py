@@ -113,3 +113,23 @@ def reverse_vowels(str):
     return res
 
 
+def three_odd_numbers(lst):
+    start_idx = 0
+    while(start_idx < len(lst)-2):
+        idx = 0
+        sum = 0
+        while(idx < 3):
+            sum += lst[start_idx + idx]
+            idx += 1
+        if sum % 2 != 0:
+            return True
+        start_idx += 1
+    return False
+
+
+res = three_odd_numbers([1,2,3,4,5])
+print(res)
+
+
+
+
