@@ -102,6 +102,14 @@ def valid_parentheses(str):
     return (num_open == 0)
 
 #reverse vowels
-
+def reverse_vowels(str):
+    res = ''
+    vowels = [s for s in str if s.lower() in 'aeiou']
+    for s in str:
+        if s.lower() in 'aeiou':
+            res += vowels.pop()
+        else:
+            res += s
+    return res
 
 
