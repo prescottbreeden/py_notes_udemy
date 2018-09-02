@@ -88,3 +88,20 @@ def two_oldest_ages(ages):
 def is_odd_string(string):
     total = sum((ord(c) - 96) for c in string.lower()) or 0
     return total % 2 == 1
+
+# parens_valid
+def valid_parentheses(str):
+    num_open = 0
+    for s in str:
+        if num_open < 0:
+            return False
+        if s == '(':
+            num_open += 1
+        if s == ')':
+            num_open -= 1
+    return (num_open == 0)
+
+#reverse vowels
+
+
+
